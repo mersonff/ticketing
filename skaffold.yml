@@ -21,7 +21,15 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: 'src/**/*.ts'
+          - src: '**/*.js'
+            dest: .
+          - src: '**/*.jsx'
+            dest: .
+          - src: '**/*.ts'
+            dest: .
+          - src: '**/*.tsx'
+            dest: .
+          - src: '**/*.css'
             dest: .
     - image: mersonff/tickets
       context: tickets

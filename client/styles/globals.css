@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ant Design theme customization */
+:root {
+  --ant-primary-color: #3b82f6;
+  --ant-primary-color-hover: #2563eb;
+  --ant-primary-color-active: #1d4ed8;
+}
+
+/* Custom components with Ant Design + Tailwind */
+@layer components {
+  .custom-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+  
+  .page-container {
+    @apply min-h-screen bg-gray-50;
+  }
+  
+  .content-wrapper {
+    @apply container mx-auto px-4 py-8;
+  }
+}
